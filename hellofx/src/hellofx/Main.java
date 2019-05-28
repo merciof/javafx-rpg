@@ -1,4 +1,4 @@
-package hellofx;
+ package hellofx;
 
 import javafx.application.Application;
 import static javafx.application.Application.launch;
@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     private void makeMove(Action action) {
+        
     }
 
 //    @Override
@@ -36,6 +37,12 @@ public class Main extends Application {
         
         Button btnAttack = new Button("Attack");
         btnAttack.setOnAction(e -> makeMove(Action.ATTACK));
+        
+        Button btnCharge = new Button("CHARGE");
+        btnCharge.setOnAction(e -> makeMove(Action.CHARGE));
+        
+        Button btnBlock = new Button("BLOCK");
+        btnBlock.setOnAction(e -> makeMove(Action.BLOCK));
         
         return root;
     }
